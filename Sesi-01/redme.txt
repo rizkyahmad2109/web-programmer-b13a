@@ -1,0 +1,4 @@
+CATATAN PERTEMUAN 1 :
+1. instal IDE VSCode
+2. instal ekstension live server, Prettier, Code formatter, auto rename tag, auto close tag
+2. Belajar tag dasar html
