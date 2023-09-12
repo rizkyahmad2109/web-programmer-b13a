@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Mandiri menghitung luas dan keliling lingkaran</title>
+    <style>
+      body {
+        min-height: 100vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .header {
+        color: #fff;
+        text-align: center;
+        background-color: rgba(0, 152, 91, 1);
+      }
+      .container {
+        font-size: 1.5rem;
+      }
+      .container li {
+        font-size: 1.2rem;
+      }
+      .footer {
+        padding: 0.5em;
+        color: #fff;
+        text-align: center;
+        background-color: rgba(0, 73, 44, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Menghitung luas dan keliling lingkaran</h1>
+    </div>
+
+    <div class="container">
+      <ul>
+        <li>
+          <!-- FLOW/ALUR/NARASI -->
+          <h2>Tahapan dalam menghitung luas dan keliling lingkaran :</h2>
+          <ol>
+            <li>Mengisi nilai jari-jari</li>
+            <li>Mengisi variabel Pi (rasio keliling lingkaran dengan diameternya) dengan nilai konstanta Pi yaitu 3.14</li>
+            <li>Menghitung luas lingkaran dengan menggunakan rumus (luas = Pi x jari-jari x jari-jari)</li>
+            <li>Menghitung keliling lingkaran dengan menggunakan rumus (keliling = 2 x Pi x jari-jari)</li>
+            <li>Tampilkan hasil perhitungan luas lingkaran</li>
+            <li>Tampilkan hasil perhitungan keliling lingkaran</li>
+          </ol>
+        </li>
+        <li>
+          <!-- PSEUDOCODE -->
+          <h2>Pseudocode menghitung luas dan keliling lingkaran :</h2>
+          <ol>
+            <li>READ and SAVE jari2, pi, luas, keliling</li>
+            <li>COMPUTE luas and keliling</li>
+            <li>SAVE previous computation luas and keliling</li>
+            <li>SHOW the computation luas and keliling</li>
+          </ol>
+        </li>
+      </ul>
+      <!-- CODING -->
+      <script>
+        // Deklarasi/Input
+        const jari2 = 5; // masukkan jari-jari lingkaran disini
+        const pi = 3.14; // mengambil nilai konstanta Pi
+        var luas;
+        var keliling;
+
+        // Perhitungan/Process
+        luas = pi * jari2 * jari2; // rumus luas lingkaran
+        keliling = 2 * pi * jari2; // rumus keliling lingkaran
+
+        // Hasil/Output
+        console.log(`Luas lingkaran: ${luas}`);
+        console.log(`Keliling lingkaran: ${keliling}`);
+      </script>
+    </div>
+
+    <div class="footer">
+      <footer>Dibuat oleh Rizky Cahya Ahmad</footer>
+    </div>
+  </body>
+</html>
