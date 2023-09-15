@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Mandiri Sesi 5</title>
+  </head>
+  <body>
+    <h1>Tugas Mandiri Sesi 5 Belajar JS</h1>
+    <table>
+      <tr>
+        <td><label for="pesan">Pesan</label></td>
+        <td>: <input type="text" name="pesan" id="pesan" autocomplete="off" autofocus /></td>
+      </tr>
+      <tr>
+        <td><label for="perulangan">Berapa Kali</label></td>
+        <td>: <input type="number" name="perulangan" id="perulangan" autocomplete="off" /></td>
+      </tr>
+    </table>
+    <button onclick="perulangan()">Cetak!</button>
+    <br />
+    <ol id="tampil"></ol>
+
+    <script>
+      function perulangan() {
+        var teks = document.getElementById('pesan').value;
+        var nomor = document.getElementById('perulangan').value;
+        var hasil = document.getElementById('tampil');
+
+        if (nomor > 0) {
+          for (let i = 0; i < nomor; i++) {
+            hasil.innerHTML = hasil.innerHTML + `<li>${teks}</li>`;
+          }
+        } else {
+          alert('angka yang anda masukkan salah! Masukkan angka 1,2,3 dst');
+          document.location.href = 'index_tugasJS.html';
+        }
+      }
+    </script>
+  </body>
+</html>
