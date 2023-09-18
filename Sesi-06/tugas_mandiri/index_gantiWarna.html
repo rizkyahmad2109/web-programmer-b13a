@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Ganti Warna di JS dengan Regex</title>
+  </head>
+  <body style="background-color: aqua">
+    <h1>Buat Animation</h1>
+
+    <p class="paragraf1">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla obcaecati dolor qui aut! Tempore beatae nam quaerat obcaecati veritatis! Accusamus ut cupiditate quisquam debitis? Libero aliquam ex ut aspernatur rem!
+    </p>
+
+    <p class="paragraf2">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla obcaecati dolor qui aut! Tempore beatae nam quaerat obcaecati veritatis! Accusamus ut cupiditate quisquam debitis? Libero aliquam ex ut aspernatur rem!
+    </p>
+
+    <p class="paragraf3">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla obcaecati dolor qui aut! Tempore beatae nam quaerat obcaecati veritatis! Accusamus ut cupiditate quisquam debitis? Libero aliquam ex ut aspernatur rem!
+    </p>
+
+    <script>
+      var p1 = document.getElementsByClassName('paragraf1')[0];
+      var p2 = document.getElementsByClassName('paragraf2')[0];
+      var p3 = document.getElementsByClassName('paragraf3')[0];
+
+      const colors = ['red', 'blue', 'green', 'orange'];
+      const colors2 = ['green', 'orange', 'red', 'blue'];
+      const colors3 = ['blue', 'green', 'orange', 'red'];
+      let colorIndex = 0;
+      var waktu = setInterval(() => {
+        const color = colors[colorIndex % colors.length];
+        const color2 = colors2[colorIndex % colors2.length];
+        const color3 = colors3[colorIndex % colors3.length];
+
+        p1.style.color = color;
+        p2.style.color = color2;
+        p3.style.color = color3;
+
+        colorIndex++;
+      }, 400);
+
+      setTimeout(() => {
+        document.body.style.backgroundColor = 'white';
+
+        clearTimeout(waktu);
+
+        p1.style.color = 'black';
+        p2.style.color = 'black';
+        p3.style.color = 'black';
+      }, 5000);
+    </script>
+  </body>
+</html>

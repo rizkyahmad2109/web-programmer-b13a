@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Input Nomor Telephone</title>
+  </head>
+  <body>
+    <!-- 
+      1. disaat inspect (wajib menggunakan number)
+      2. disaat diganti di element tipe (number nya gk bisa berubah jadi text)
+      durasi 15 menit (boleh browsing)
+   -->
+    <h3>Aplikasi Input No Telp</h3>
+    <hr />
+    <form action="">
+      <label for="no_telp">No Telp</label>
+      <input type="number" onkeyup="this.value=this.value.replace(/[^\d]/,'')" />
+      <button>Submit</button>
+    </form>
+
+    <script></script>
+  </body>
+</html>
